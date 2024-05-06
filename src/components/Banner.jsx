@@ -1,5 +1,3 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
-
 import myself from './../assets/Images/myself.jpg'
 import linkedinIcon from './../assets/Icons/linkedin.svg'
 import githubIcon from './../assets/Icons/github.svg'
@@ -9,7 +7,7 @@ import ButtonWithImage from './ButtonWithImage';
 
 function Banner () {
     return (
-        <main id='#about'>
+        <section id='about'>
             <section className='flex flex-col items-center gap-y-3 pt-28  pb-28'>
                 <h1 className="text-4xl text-wrap font-bold tracking-tight text-purple-400 sm:text-5xl">
                     Samuel Carbonell Gonçalves
@@ -52,7 +50,7 @@ function Banner () {
                 </section>
                 
             </div>
-        </main>
+        </section>
     );
 };
 
