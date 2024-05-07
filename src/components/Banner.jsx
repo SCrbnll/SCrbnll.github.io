@@ -8,20 +8,20 @@ import ButtonWithImage from './ButtonWithImage';
 function Banner () {
     return (
         <section id='about'>
-            <section className='flex flex-col items-center gap-y-3 pt-28  pb-28 ml-3 lg:ml-0'>
-                <h1 className="text-4xl text-wrap font-bold tracking-tight text-purple-400 sm:text-5xl">
+            <section className='flex flex-col items-center gap-y-3 pt-28 pb-28 ml-3 lg:ml-0'>
+                <h1 className="text-3xl lg:text-4xl text-wrap font-bold tracking-tight text-purple-400 sm:text-5xl">
                     Samuel Carbonell Gonçalves
                 </h1>
-                <h2 className="text-3xl opacity-80 text-purple-200 font-bold pb-4 ">Full-Stack Developer</h2>
-                <p className="text-xl text-wrap text-orange-100 px-1 text-center mt-4 w-6/12">
+                <h2 className="text-2xl lg:text-3xl opacity-80 text-purple-200 font-bold pb-4 ">Full-Stack Developer</h2>
+                <p className="text-base lg:text-xl text-wrap text-orange-100 px-1 text-center mt-4 lg:w-6/12 w-[400px]">
                     Siempre explorando nuevos paradigmas y tecnologías para implementar la solución idónea en el momento preciso.
                 </p>
 
             </section>
-            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:pl-32 pl-10 pt-12 pb-24 lg:pb-30">
-                <section className="lg:w-[840px] lg:px-4 py-30 md:w-[70%] w-[460px]">
-                    <div className="w-full rounded-lg bg-purple-100 bg-opacity-50 border border-white p-4">
-                        <h2 className="text-base lg:text-xl text-wrap text-purple-100 p-4 gap-y-4">
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:pl-32lg:pt-12 lg:pb-30">
+                <section className="lg:w-[840px] lg:px-4 py-30 md:w-[70%] w-[420px]">
+                    <div className="rounded-lg bg-purple-100 lg:w-auto w-[420px] bg-opacity-50 border border-white p-4">
+                        <h2 className="text-sm lg:text-xl text-wrap text-purple-100 p-4  w-auto">
                             ¡Hola! <b className='text-purple-300'>Soy Samuel Carbonell</b>, graduado recientemente en
                             <b className='text-purple-300'> Desarrollo de Aplicaciones Multiplataforma</b> y apasionado por la creación de software.
                             <br /><br />Durante mi formación, adquirí habilidades en Python y Java, centrándome en el
@@ -32,7 +32,7 @@ function Banner () {
                             para crecer profesionalmente y contribuir al éxito de cualquier equipo.
                         </h2>
                     </div>
-                    <div className='flex flex-col lg:gap-x-8 lg:flex-row justify-center mt-8 lg:mt-12 gap-y-8'>
+                    <div className='flex flex-col lg:gap-x-8 lg:flex-row justify-center mt-8 lg:mt-12 gap-y-8 lg:w-auto w-[200px]'>
                         <ButtonWithImage imageUrl={linkedinIcon} title="LinkedIn" href="https://www.linkedin.com/in/samuu-crbnll" />
                         <ButtonWithImage imageUrl={githubIcon} title="GitHub" href="https://www.github.com/SCrbnll" />
                         <ButtonWithImage imageUrl={mailIcon} title="Mail" href="mailto:samuelcarbonell1203@gmail.com" />

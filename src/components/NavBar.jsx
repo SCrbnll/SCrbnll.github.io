@@ -10,7 +10,7 @@ function NavBar() {
     };
 
     return (
-        <header className='flex flex-col lg:flex-row justify-between items-center py-5 lg:w-[1120px] mx-auto border-b-2 border-purple-200 w-full'>
+        <header className='flex flex-col lg:flex-row justify-between items-center py-5 lg:w-[1120px] mx-auto border-b-2 border-purple-200 w-[400px]'>
             <img className="w-32 ml-6 lg:w-20 lg:ml-0 mb-4 lg:mb-0" src={logo} alt='Logo' />
 
             <nav className='flex flex-col lg:flex-row gap-x-10 lg:gap-x-6 lg:opacity-80'>
