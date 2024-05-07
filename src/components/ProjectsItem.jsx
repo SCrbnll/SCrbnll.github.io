@@ -1,4 +1,5 @@
 import Technologies from "./Techonologies";
+import ButtonProjectLink from "./ButtonProjectLink"
 
 import angularIcon from "./../assets/Icons/angular.svg"
 import htmlIcon from "./../assets/Icons/html.svg"
@@ -9,6 +10,9 @@ import reactIcon from "./../assets/Icons/react.svg"
 import expoIcon from "./../assets/Icons/expo.svg"
 import typescriptIcon from "./../assets/Icons/typescript.svg"
 import javascriptIcon from "./../assets/Icons/javascript.svg"
+import tailwindcssIcon from "./../assets/Icons/tailwindcss.svg"
+import githubIcon from './../assets/Icons/github.svg'
+import linkIcon from './../assets/Icons/link.svg'
 
 import comingsoon from "./../assets/Images/coming_soon.jpg"
 
@@ -32,8 +36,10 @@ function getColorForTechnology(tech) {
         return "bg-[#1D4876]"
       case "JavaScript":
         return "bg-[#7b6f0f]"
+      case "Tailwind CSS":
+        return "bg-[#003159]"
       default:
-        return "000"; 
+        return "bg-[#000000]"
     }
 }
   
@@ -57,6 +63,8 @@ function getColorForTechnology(tech) {
         return typescriptIcon;
       case "JavaScript":
         return javascriptIcon;
+      case "Tailwind CSS":
+        return tailwindcssIcon;
       default:
         return null; 
     }
@@ -70,39 +78,54 @@ function ProjectsItem(props) {
         <div className="flex flex-col md:flex-row md:w-[1110px] pb-10">
             {isImageOnRight ? (
                 <>
-                    <div class=" bg-opacity-50 p-4 w-auto md:w-[900px] border-l-4 border-gray-500 pl-6">
-                        <h3 class="flex items-center text-wrap text-4xl font-semibold text-orange-400 mb-4">{title}</h3>
+                    <div class=" bg-opacity-50 p-4 lg:w-[900px] w-[700px] lg:ml-0 ml-5 border-l-4 border-gray-500 pl-6">
+                        <h3 class="flex items-center text-wrap lg:w-auto w-22 lg:text-3xl text-2xl font-semibold text-orange-400 mb-4">{title}</h3>
                         <ul className="flex flex-row gap-x-2 mb-6">
                             {technologies.map((tech) => (
                                 <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
                             ))}
                         </ul>
                         <p class="mb-4 text-lg text-wrap font-normal text-gray-500 dark:text-gray-400">{description} </p>
+                        <div className='flex gap-x-6'>
+                          {github && (
+                            <ButtonProjectLink imageUrl={githubIcon} title="Repository" href={github} />
+                          )}
+                          {preview && (
+                            <ButtonProjectLink imageUrl={linkIcon} title="Preview" href={preview} />
+                          )}
+                      </div>
+
                     </div>
 
-                    <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl 
-                    overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-                        <div className="size-fit">
+                    <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 ">
+                        <div className="size-fit lg:mr-0 mr-40">
                             <img src={img ? img : comingsoon} alt="Imagen" />
                         </div>
                     </div>  
                 </>
             ) : (
                 <>
-                    <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl 
-                    overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-                        <div className="size-fit">
+                    <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8">
+                        <div className="size-fit lg:ml-0 ml-20 lg:pt-0 pt-5">
                             <img src={img ? img : comingsoon} alt="Imagen" />
                         </div>
                     </div> 
-                    <div class="bg-opacity-50 p-4 w-auto md:w-[900px] border-r-4 border-gray-500 pr-6">
-                        <h3 class="text-right text-wrap text-4xl font-semibold text-orange-400 mb-4">{title}</h3>
+                    <div class="bg-opacity-50 p-4 lg:w-[900px] w-[700px] lg:mr-0 mr-60 border-r-4 border-gray-500 pr-6">
+                        <h3 class="text-right text-wrap lg:w-auto w-22 lg:text-3xl text-2xl font-semibold text-orange-400 mb-4">{title}</h3>
                         <ul className="flex flex-row-reverse gap-x-2 mb-6">
-                            {technologies.reverse().map((tech) => (
+                            {technologies.map((tech) => (
                                 <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
                             ))}
                         </ul>
                         <p class="mb-4 text-lg text-wrap font-normal text-gray-500 dark:text-gray-400 text-right">{description}</p>
+                        <div className='flex flex-row-reverse gap-x-6'>
+                          {github && (
+                            <ButtonProjectLink imageUrl={githubIcon} title="Repository" href={github} />
+                          )}
+                          {preview && (
+                            <ButtonProjectLink imageUrl={linkIcon} title="Preview" href={preview} />
+                          )}
+                      </div>
                     </div>
 
                 </>

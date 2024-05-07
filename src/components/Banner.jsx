@@ -8,7 +8,7 @@ import ButtonWithImage from './ButtonWithImage';
 function Banner () {
     return (
         <section id='about'>
-            <section className='flex flex-col items-center gap-y-3 pt-28  pb-28'>
+            <section className='flex flex-col items-center gap-y-3 pt-28  pb-28 ml-3 lg:ml-0'>
                 <h1 className="text-4xl text-wrap font-bold tracking-tight text-purple-400 sm:text-5xl">
                     Samuel Carbonell Gonçalves
                 </h1>
@@ -18,10 +18,10 @@ function Banner () {
                 </p>
 
             </section>
-            <div className="flex flex-row items-center pr-16 pl-32">
-                <section className="w-full md:w-[10%] px-4 py-30 lg:w-[740px]">
+            <div className="flex flex-row items-center lg:pr-16 lg:pl-32 pl-10">
+                <section className="w-full md:w-[70%] lg:px-4 py-30 lg:w-[740px]">
                     <div className="rounded-lg bg-purple-100 bg-opacity-50 border border-white p-4 w-auto">
-                        <h2 className="text-xl text-wrap text-purple-100 p-4 gap-y-4">
+                        <h2 className="text-base lg:text-xl text-wrap text-purple-100 p-4 gap-y-4">
                         ¡Hola! <b className='text-purple-300'>Soy Samuel Carbonell </b>, graduado recientemente en 
                         <b className='text-purple-300'> Desarrollo de Aplicaciones Multiplataforma</b> y apasionado por la creación de software.
                         <br/><br/>Durante mi formación, adquirí habilidades en Python y Java, centrándome en el 
@@ -41,11 +41,11 @@ function Banner () {
                     </div>
                     
                 </section>
-                <section className="px-16 mb-16">
+                <section className="lg:px-16 mb-16 px-4 lg:mr-0 mr-3">
                     <img
                         src={myself}
                         alt=""
-                        className="size-80 rounded-full border-4 border-purple-400 "
+                        className="lg:size-80 size-56 rounded-full border-4 border-purple-400 "
                     />
                 </section>
                 
