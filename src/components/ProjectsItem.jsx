@@ -8,25 +8,30 @@ import unityIcon from "./../assets/Icons/unity.svg"
 import reactIcon from "./../assets/Icons/react.svg"
 import expoIcon from "./../assets/Icons/expo.svg"
 import typescriptIcon from "./../assets/Icons/typescript.svg"
+import javascriptIcon from "./../assets/Icons/javascript.svg"
+
+import comingsoon from "./../assets/Images/coming_soon.jpg"
 
 function getColorForTechnology(tech) {
     switch (tech) {
       case "Angular":
-        return "580000";
+        return "bg-[#580000]";
       case "HTML":
-        return "a54c0b";
+        return "bg-[#A54C0B]";
       case "CSS":
-        return "00008B";
+        return "bg-[#00008B]";
       case "C #":
-        return "3A3A3A"
+        return "bg-[#3A3A3A]"
       case "Unity":
-        return "00599C"
+        return "bg-[#00599C]"
       case "React":
-        return "20232A"
+        return "bg-[#20232A]"
       case "Expo":
-        return "5A5539"
+        return "bg-[#5A5539]"
       case "TypeScript":
-        return "1d4876"
+        return "bg-[#1D4876]"
+      case "JavaScript":
+        return "bg-[#7b6f0f]"
       default:
         return "000"; 
     }
@@ -50,6 +55,8 @@ function getColorForTechnology(tech) {
         return expoIcon;
       case "TypeScript":
         return typescriptIcon;
+      case "JavaScript":
+        return javascriptIcon;
       default:
         return null; 
     }
@@ -76,7 +83,7 @@ function ProjectsItem(props) {
                     <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl 
                     overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                         <div className="size-fit">
-                            <img src={img} alt="Imagen" />
+                            <img src={img ? img : comingsoon} alt="Imagen" />
                         </div>
                     </div>  
                 </>
@@ -85,13 +92,13 @@ function ProjectsItem(props) {
                     <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl 
                     overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                         <div className="size-fit">
-                            <img src={img} alt="Imagen" />
+                            <img src={img ? img : comingsoon} alt="Imagen" />
                         </div>
                     </div> 
                     <div class="bg-opacity-50 p-4 w-auto md:w-[900px] border-r-4 border-gray-500 pr-6">
                         <h3 class="text-right text-wrap text-4xl font-semibold text-orange-400 mb-4">{title}</h3>
                         <ul className="flex flex-row-reverse gap-x-2 mb-6">
-                            {technologies.map((tech) => (
+                            {technologies.reverse().map((tech) => (
                                 <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
                             ))}
                         </ul>

@@ -17,7 +17,6 @@ function NavBar () {
             <a href='#about' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Sobre mí' : 'About me'}</a>
             <a href='#experience' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Experiencia' : 'Experience'}</a>
             <a href='#projects' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Proyectos' : 'Projects'}</a>
-            <a href='#contact' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Contacto' : 'Contact'}</a>
         </nav>
         <div className="flex gap-x-7">
             <button onClick={toggleLanguage}>

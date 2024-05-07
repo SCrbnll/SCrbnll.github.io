@@ -3,33 +3,40 @@ import ProjectsItem from './ProjectsItem';
 function Projects () {
     const PROJECTS = [
         {
+            title: 'RoadBeat',
+            technologies: ['Expo', 'JavaScript', 'CSS'],
+            description: 'Proximamente...',
+            github: 'aaaa',
+            preview: 'aaaa',
+        },
+        {
+            title: 'Porfolio',
+            technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
+            description: 'Este mismo Porfolio que estás visualizando está desarrollado en React. Desarrollado desde cero como un proyecto ' + 
+            'de aprendizaje, ofrece una experiencia intuitiva y atractiva para los visitantes. Muestra mi experiencia y proyectos de manera sencilla y eficiente',
+            github: 'aaaa',
+            preview: 'aaaa',
+            isImageOnRight: true,
+        },
+        {
             title: 'Pokédex',
-            technologies: ['Angular', 'HTML', 'CSS'],
+            technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
             description: 'Una Pokédex web para explorar y aprender sobre Pokémon. Desarrollada con Angular y conectada a la API gratuita de PokeApi. ' + 
             'Interfaz intuitiva para buscar, filtrar y descubrir información detallada sobre los Pokémon.',
             github: 'aaaa',
             preview: 'aaaa',
-            isImageOnRight: true,
             img: 'https://raw.githubusercontent.com/SCrbnll/Pokedex/main/pokedex.png'
         },
         {
             title: 'Knight Fate',
-            technologies: ['C #', 'Unity'],
+            technologies: ['Unity', 'C #'],
             description: 'Knight Fate: un juego de aventuras Pixelart en Unity. Embárcate en la épica travesía de un caballero atrapado en una mazmorra.' + 
-            'Supera desafíos, resuelve enigmas y derrota enemigos para encontrar la salida y asegurar tu libertad. ¿Tienes lo necesario para forjar tu destino ' + 
+            ' Supera desafíos, resuelve enigmas y derrota enemigos para encontrar la salida y asegurar tu libertad. ¿Tienes lo necesario para forjar tu destino ' + 
             'como un verdadero héroe?',
             github: 'aaaa',
             preview: 'aaaa',
-            img: 'https://raw.githubusercontent.com/SCrbnll/KnightFate/main/knight_fate.png'
-        },
-        {
-            title: 'RoadBeat',
-            technologies: ['Expo', 'TypeScript', 'CSS'],
-            description: 'Proximamente...',
-            github: 'aaaa',
-            preview: 'aaaa',
             isImageOnRight: true,
-            img: 'https://raw.githubusercontent.com/SCrbnll/RoadBeat/main/roadbeat.png?token=GHSAT0AAAAAACRIDBAVDA36FXTCBEBKTGMYZRZLHBA'
+            img: 'https://raw.githubusercontent.com/SCrbnll/KnightFate/main/knight_fate.png'
         },
         
     ]
