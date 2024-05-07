@@ -12,7 +12,7 @@ function ExperienceItem(props) {
             <h3 class="flex items-center text-wrap text-xl lg:w-full w-80 font-semibold text-orange-400 ">{job}</h3>
             <h3 class="flex items-center mb-1 text-xl lg:w-full w-80 font-semibold text-purple-400 "> {company}</h3>
             <time class="block mb-2 text-sm font-normal lg:w-full w-80 leading-none text-white-400 opacity-80 ">{date}</time>
-            <p class="mb-4 text-lg text-wrap font-normal lg:w-full w-96 text-gray-500 dark:text-gray-400">{description} </p>
+            <p class="mb-4 text-sm lg:text-lg text-wrap font-normal lg:w-full w-96 text-gray-500 dark:text-gray-400">{description} </p>
         </li>
     )
 }

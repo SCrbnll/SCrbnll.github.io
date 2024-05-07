@@ -10,14 +10,14 @@ function NavBar() {
     };
 
     return (
-        <header className='flex justify-between items-center py-5 lg:w-[1120px] mx-auto border-b-2 border-purple-200 w-full'>
-            <img className="w-32 ml-6 lg:w-20 lg:ml-0" src={logo} alt='Logo' />
+        <header className='flex flex-col lg:flex-row justify-between items-center py-5 lg:w-[1120px] mx-auto border-b-2 border-purple-200 w-full'>
+            <img className="w-32 ml-6 lg:w-20 lg:ml-0 mb-4 lg:mb-0" src={logo} alt='Logo' />
 
-            <nav className='flex flex-row gap-x-10 opacity-80'>
-                <a href='#top' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Inicio' : 'Home'}</a>
-                <a href='#about' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Sobre mí' : 'About me'}</a>
-                <a href='#experience' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Experiencia' : 'Experience'}</a>
-                <a href='#projects' className="hover:text-purple-200 text-purple-400">{language === 'es' ? 'Proyectos' : 'Projects'}</a>
+            <nav className='flex flex-col lg:flex-row gap-x-10 lg:gap-x-6 lg:opacity-80'>
+                <a href='#top' className="hover:text-purple-200 text-purple-400 mb-4 lg:mb-0">{language === 'es' ? 'Inicio' : 'Home'}</a>
+                <a href='#about' className="hover:text-purple-200 text-purple-400 mb-4 lg:mb-0">{language === 'es' ? 'Sobre mí' : 'About me'}</a>
+                <a href='#experience' className="hover:text-purple-200 text-purple-400 mb-4 lg:mb-0">{language === 'es' ? 'Experiencia' : 'Experience'}</a>
+                <a href='#projects' className="hover:text-purple-200 text-purple-400 mb-4 lg:mb-0">{language === 'es' ? 'Proyectos' : 'Projects'}</a>
             </nav>
             <div className="lg:flex lg:mr-0 gap-x-7 mr-8">
                 <button onClick={toggleLanguage}>

@@ -18,37 +18,33 @@ function Banner () {
                 </p>
 
             </section>
-            <div className="flex flex-row items-center lg:pr-16 lg:pl-32 pl-10">
-                <section className="w-full md:w-[70%] lg:px-4 py-30 lg:w-[740px]">
-                    <div className="rounded-lg bg-purple-100 bg-opacity-50 border border-white p-4 w-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:pl-32 pl-10 pt-12 pb-24 lg:pb-30">
+                <section className="lg:w-[840px] lg:px-4 py-30 md:w-[70%] w-[460px]">
+                    <div className="w-full rounded-lg bg-purple-100 bg-opacity-50 border border-white p-4">
                         <h2 className="text-base lg:text-xl text-wrap text-purple-100 p-4 gap-y-4">
-                        ¡Hola! <b className='text-purple-300'>Soy Samuel Carbonell </b>, graduado recientemente en 
-                        <b className='text-purple-300'> Desarrollo de Aplicaciones Multiplataforma</b> y apasionado por la creación de software.
-                        <br/><br/>Durante mi formación, adquirí habilidades en Python y Java, centrándome en el 
-                        <b className='text-purple-300'> back-end </b>. Ahora estoy interesado en convertirme en un desarrollador 
-                        <b className='text-purple-300'> full-stack</b> para ofrecer soluciones más completas.
-                        <br/>Actualmente, estoy ampliando mis conocimientos en la creación de 
-                        <b className='text-purple-300'> aplicaciones móviles</b> y siempre busco nuevas oportunidades 
-                        para crecer profesionalmente 
-                        y contribuir al éxito de cualquier equipo.
+                            ¡Hola! <b className='text-purple-300'>Soy Samuel Carbonell</b>, graduado recientemente en
+                            <b className='text-purple-300'> Desarrollo de Aplicaciones Multiplataforma</b> y apasionado por la creación de software.
+                            <br /><br />Durante mi formación, adquirí habilidades en Python y Java, centrándome en el
+                            <b className='text-purple-300'> back-end</b>. Ahora estoy interesado en convertirme en un desarrollador
+                            <b className='text-purple-300'> full-stack</b> para ofrecer soluciones más completas.
+                            <br />Actualmente, estoy ampliando mis conocimientos en la creación de
+                            <b className='text-purple-300'> aplicaciones móviles</b> y siempre busco nuevas oportunidades
+                            para crecer profesionalmente y contribuir al éxito de cualquier equipo.
                         </h2>
                     </div>
-                    <br />
-                    <div className='flex gap-x-8 items-center justify-center'>
+                    <div className='flex flex-col lg:gap-x-8 lg:flex-row justify-center mt-8 lg:mt-12 gap-y-8'>
                         <ButtonWithImage imageUrl={linkedinIcon} title="LinkedIn" href="https://www.linkedin.com/in/samuu-crbnll" />
                         <ButtonWithImage imageUrl={githubIcon} title="GitHub" href="https://www.github.com/SCrbnll" />
                         <ButtonWithImage imageUrl={mailIcon} title="Mail" href="mailto:samuelcarbonell1203@gmail.com" />
                     </div>
-                    
                 </section>
-                <section className="lg:px-16 mb-16 px-4 lg:mr-0 mr-3">
+                <section className="lg:w-[40%] lg:ml-14 mb-12 lg:mb-20 lg:mt-0 mt-12">
                     <img
                         src={myself}
                         alt=""
-                        className="lg:size-80 size-56 rounded-full border-4 border-purple-400 "
+                        className="w-[240px] md:w-56 lg:w-[320px] h-[240px] md:h-56 lg:h-[320px] rounded-full border-4 border-purple-400 mx-auto lg:mx-0"
                     />
                 </section>
-                
             </div>
         </section>
     );
