@@ -31,14 +31,14 @@ function Experience () {
 
     return (
         <div id='experience'>
-            <div className="flex flex-col lg:pr-18 lg:pl-28 gap-y-4 pt-28 pb-10">
+            <div className="flex flex-col lg:pr-18 lg:pl-32 gap-y-4 pt-28 pb-10">
                 <h2 className="text-2xl lg:text-3xl opacity-80 text-purple-200 font-bold pb-4 ml-10 lg:ml-0">Experiencia
                     <button className="ms-10 text-sm px-4 h-6 mx-auto border border-orange-100 rounded-full text-black font-bold bg-purple-300 pointer-events-none">
                         Disponible para trabajar
                     </button>
                 </h2>
                 <section className=" lg:px-4 px-14 py-30 lg:w-[740px] w-[10%]"> 
-                    <ol class="relative border-s border-gray-200 dark:border-gray-700">  
+                    <ol class="relative border-s border-gray-200">  
                     {
                         EXPERIENCE.map((experience) => (
                             <ExperienceItem {...experience}/>
