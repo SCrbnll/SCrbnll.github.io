@@ -18,8 +18,8 @@ function Banner () {
                 </p>
 
             </section>
-            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:pl-32lg:pt-12 lg:pb-30">
-                <section className="lg:w-[840px] lg:px-4 py-30 md:w-[70%] w-[420px]">
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:pl-28 lg:pt-12 lg:pb-28">
+                <section className="lg:w-[870px] lg:px-4 py-30 md:w-[70%] w-[420px]">
                     <div className="rounded-lg bg-purple-100 lg:w-auto w-[420px] bg-opacity-50 border border-white p-4">
                         <h2 className="text-sm lg:text-xl text-wrap text-purple-100 p-4  w-auto">
                             ¡Hola! <b className='text-purple-300'>Soy Samuel Carbonell</b>, graduado recientemente en
@@ -38,7 +38,7 @@ function Banner () {
                         <ButtonWithImage imageUrl={mailIcon} title="Mail" href="mailto:samuelcarbonell1203@gmail.com" />
                     </div>
                 </section>
-                <section className="lg:w-[40%] lg:ml-14 mb-12 lg:mb-20 lg:mt-0 mt-12">
+                <section className="lg:w-[40%] lg:ml-12 mb-12 lg:mb-20 lg:mt-0 mt-12">
                     <img
                         src={myself}
                         alt=""

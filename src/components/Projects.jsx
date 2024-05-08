@@ -40,9 +40,9 @@ function Projects () {
 
     return (
         <div id='projects'>
-            <div className="flex flex-col lg:pl-36 pl-72 gap-y-1">
-                <h2 className="text-3xl opacity-80 text-purple-200 font-bold pb-8 gap-x-10 ">Mis Proyectos</h2>
-                <section className="w-full md:w-[10%] py-30 lg:w-[740px]">
+            <div className="flex flex-col lg:pr-18 lg:pl-28 gap-y-4 pt-10 pb-10">
+                <h2 className="lg:text-3xl text-2xl opacity-80 text-purple-200 font-bold pb-8 gap-x-10 lg:pl-0 pl-10">Mis Proyectos</h2>
+                <section className="w-fit py-30 lg:w-[740px]">
                     {
                     PROJECTS.map((projects) => (
                         <ProjectsItem {...projects}  />

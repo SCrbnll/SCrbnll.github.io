@@ -10,9 +10,7 @@ const App = () => {
             <NavBar /> 
             <Banner /> 
             <Experience />
-            {/* 
             <Projects />
-            */}
         </div>
     )
 
