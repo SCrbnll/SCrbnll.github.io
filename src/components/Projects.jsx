@@ -13,6 +13,7 @@ function Projects () {
             description: 'Este mismo Porfolio que estás visualizando está desarrollado en React. Desarrollado desde cero como un proyecto ' + 
             'de aprendizaje, ofrece una experiencia intuitiva y atractiva para los visitantes. Muestra mi experiencia y proyectos de manera sencilla y eficiente',
             github: 'https://github.com/SCrbnll/SCrbnllDev/',
+            img: 'https://raw.githubusercontent.com/SCrbnll/SCrbnllDev/main/porfolio.png'
         },
         {
             title: 'Pokédex',
