@@ -13,7 +13,6 @@ function Projects () {
             description: 'Este mismo Porfolio que estás visualizando está desarrollado en React. Desarrollado desde cero como un proyecto ' + 
             'de aprendizaje, ofrece una experiencia intuitiva y atractiva para los visitantes. Muestra mi experiencia y proyectos de manera sencilla y eficiente',
             github: 'https://github.com/SCrbnll/SCrbnllDev/',
-            isImageOnRight: true,
         },
         {
             title: 'Pokédex',
@@ -22,7 +21,7 @@ function Projects () {
             'Interfaz intuitiva para buscar, filtrar y descubrir información detallada sobre los Pokémon.',
             github: 'https://github.com/SCrbnll/Pokedex/',
             preview: 'https://scrbnll-pokedex.netlify.app/',
-            img: 'https://raw.githubusercontent.com/SCrbnll/Pokedex/main/pokedex.png'
+            img: 'https://raw.githubusercontent.com/SCrbnll/Pokedex/main/pokedex.png',
         },
         {
             title: 'Knight Fate',
@@ -32,7 +31,6 @@ function Projects () {
             'como un verdadero héroe?',
             github: 'https://github.com/SCrbnll/KnightFate/',
             preview: 'https://youtu.be/rqjld6bgV-k',
-            isImageOnRight: true,
             img: 'https://raw.githubusercontent.com/SCrbnll/KnightFate/main/knight_fate.png'
         },
         

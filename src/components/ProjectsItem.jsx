@@ -72,64 +72,36 @@ function getColorForTechnology(tech) {
 
 
 function ProjectsItem(props) {
-    const { title, technologies, description, github, preview, img, isImageOnRight } = props;
+    const { title, technologies, description, github, preview, img } = props;
 
     return (
-        <div className="flex flex-col md:flex-row md:w-[1110px] w-[440px] pb-10 lg:pl-0 pl-12">
-            {isImageOnRight ? (
-                <>
-                    <div class=" bg-opacity-50 p-4 lg:w-[900px] w-[300px] lg:ml-0 ml-5 border-l-4 border-gray-500">
-                        <h3 class="flex items-center text-wrap lg:w-auto w-21 lg:text-3xl text-2xl font-semibold text-orange-400 mb-4">{title}</h3>
-                        <ul className="flex lg:flex-row flex-col gap-x-2 mb-6 lg:gap-y-0 gap-y-1">
-                            {technologies.map((tech) => (
-                                <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
-                            ))}
-                        </ul>
-                        <p class="mb-4 lg:text-lg text-base text-wrap font-normal text-gray-500 dark:text-gray-400">{description} </p>
-                        <div className='flex gap-x-6'>
-                          {github && (
-                            <ButtonProjectLink imageUrl={githubIcon} title="Repository" href={github} />
-                          )}
-                          {preview && (
-                            <ButtonProjectLink imageUrl={linkIcon} title="Preview" href={preview} />
-                          )}
-                      </div>
+        <div className="flex flex-col md:flex-row md:w-[1110px] w-[440px] pb-10 lg:pl-0 pl-12"> 
+          <>
+            <div class=" bg-opacity-50 p-4 lg:w-[900px] w-[300px] lg:ml-0 ml-5 border-l-4 border-gray-500">
+              <h3 class="flex items-center text-wrap lg:w-auto w-21 lg:text-3xl text-2xl font-semibold text-orange-400 mb-4">{title}</h3>
+              <ul className="flex lg:flex-row flex-col gap-x-2 mb-6 lg:gap-y-0 gap-y-1">
+                {technologies.map((tech) => (
+                  <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
+                ))}
+              </ul>
+              <p class="mb-4 lg:text-lg text-base text-wrap font-normal text-gray-500 dark:text-gray-400">{description} </p>
+              <div className='flex gap-x-6'>
+                {github && (
+                  <ButtonProjectLink imageUrl={githubIcon} title="Repository" href={github} />
+                )}
+                {preview && (
+                  <ButtonProjectLink imageUrl={linkIcon} title="Preview" href={preview} />
+                )}
+              </div>
 
-                    </div>
+            </div>
 
-                    <div className="flex flex-col items-center col-span-6 row-span-5 gap-8 ">
-                        <div className="w-[270px] md:w-56 lg:w-[500px] h-[150px] md:h-56 lg:h-[310px] mr-10">
-                            <img src={img ? img : comingsoon} alt="Imagen" />
-                        </div>
-                    </div>  
-                </>
-            ) : (
-                <>
-                    <div className="flex flex-col items-left col-span-6 row-span-5 gap-8">
-                        <div className="w-[270px] md:w-56 lg:w-[500px] h-[150px] md:h-56 lg:h-[310px] ml-2">
-                            <img src={img ? img : comingsoon} alt="Imagen" />
-                        </div>
-                    </div> 
-                    <div class="bg-opacity-50 p-4 lg:w-[900px] w-[300px] border-r-4 border-gray-500">
-                        <h3 class="text-right text-wrap lg:w-auto w-22 lg:text-3xl text-2xl font-semibold text-orange-400 mb-4">{title}</h3>
-                        <ul className="flex lg:flex-row-reverse flex-col-reverse gap-x-2 mb-6 lg:gap-y-0 gap-y-1">
-                            {technologies.map((tech) => (
-                                <Technologies name={tech} color={getColorForTechnology(tech)} img={getIconForTechnology(tech)} />
-                            ))}
-                        </ul>
-                        <p class="mb-4 lg:text-lg text-base text-wrap font-normal text-gray-500 dark:text-gray-400 text-right">{description}</p>
-                        <div className='flex flex-row-reverse gap-x-6'>
-                          {github && (
-                            <ButtonProjectLink imageUrl={githubIcon} title="Repository" href={github} />
-                          )}
-                          {preview && (
-                            <ButtonProjectLink imageUrl={linkIcon} title="Preview" href={preview} />
-                          )}
-                      </div>
-                    </div>
-
-                </>
-            )}
+            <div className="flex flex-col items-center col-span-6 row-span-5 gap-8 ">
+              <div className="w-[270px] md:w-56 lg:w-[500px] h-[150px] md:h-56 lg:h-[310px] mr-10 lg:mr-2">
+                  <img src={img ? img : comingsoon} alt="Imagen" />
+                </div>
+            </div>  
+          </>
         </div>
     );
     
